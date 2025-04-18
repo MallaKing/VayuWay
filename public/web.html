@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Real-Time GPS Tracker with KML Corridor</title>
+  <script src="https://apis.mapmyindia.com/advancedmaps/v1/4395808ec91374c8902de57992609d9f/map_load?v=1.5"></script>
+  <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    #map {
+      height: 80vh;
+      width: 100%;
+    }
+    .info {
+      padding: 1rem;
+      background: #f9f9f9;
+      font-size: 1rem;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="info">
+    <p><strong>Latitude:</strong> <span id="lat">Loading...</span></p>
+    <p><strong>Longitude:</strong> <span id="lng">Loading...</span></p>
+    <p><strong>Accuracy:</strong> <span id="accuracy">Loading...</span> meters</p>
+    <p><strong>Timestamp:</strong> <span id="timestamp">Loading...</span></p>
+    <div class="inf">
+      <label for="corid-input"><strong>Enter Corridor ID:</strong></label>
+      <input type="text" id="corid-input" placeholder="e.g. 660faac5cc5d0a35b4fd80c1">
+      <button onclick="loadCorridor()">See Corridor</button>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

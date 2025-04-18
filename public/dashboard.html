@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiblle" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Democratizing Indian UTM  and making your ambitions limitless.We provide safe, secure ,economical and legal drone solutions to our clients making their drone flights and operations hassle free.">
+
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="loggg.png" type="image/x-icon">
+
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logout-btn {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #0077cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Your Dashboard</h1>
+    <a href="coridmap.html" target="_blank">LOADING CORRIDOR</a><br>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <script>
+        if (sessionStorage.getItem("loggedIn") !== "true") {
+            window.location.href = "index.html";
+        }
+
+        function logout() {
+            sessionStorage.removeItem("loggedIn");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
+ 
