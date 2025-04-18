@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features":[
+{"type":"Feature","geometry":{"type":"LineString","coordinates":[[74.89737154398028,32.80199868968414,0],[74.89765164141384,32.80154126067232,0]]},"properties":{"name":"corridor 1","tessellate":true}}
+]}
